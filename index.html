@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Link css-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculadora IMC</title>
+</head>
+
+<body>
+
+<!--inicio do header-->
+
+    <header>
+<!--inicio do container-->
+        <div class="conteiner">
+
+<!--inicio do botoes-->
+            <nav>
+                <a href="index.html">
+                    <img src="img_b/Proz_Logo_Cab.png" alt="Logo" height="60px" width="200px">
+                </a>
+                <ul class="ul">
+                    <a href="index.html">Home</a>
+                    <a href=" " target="_blank">Serviços</a> <!--target="blank" fazer o link abrir em uma nova guia-->
+                    <a href=" " target="_blank">Contato</a>
+                    <a href=" " target="_blank">Avaliação Física</a>
+            </nav>
+<!--fim do botoes navegação-->
+            
+        </div>
+<!--fim do container-->
+        
+        <h3>Calculadora IMC Proz</h3>
+
+        <br>
+
+        <div class="conteiner2">
+            <div class="item">
+                <form method="get">
+                    <label for="nome">Nome:</label>
+                    <input name="nome" type="text">
+
+                    <label for="idade">Idade:</label>
+                    <input name="idade" type="text">
+                    <br>
+                    <label for="pes">Peso:</label>
+                    <input id="peso" name="pes" type="text">
+
+                    <label for="alt">Altura:</label>
+                    <input id="altura" name="alt" type="text">
+                </form>
+                <br>
+                <button onclick="calcula()">Confirmar</button>
+            </div>
+            
+            <div class="item">
+
+                <h2 id="resp">Resultado </h2>
+                <br><br>
+                <p id="resposta"></p>
+                <p id="msg"></p>
+            </div>   
+        </div>
+        
+    </header>
+   
+    <!--fim conteiner -->
+    </section>
+
+    <br><br>
+
+    <!--footer-->
+    <footer class="footer">
+        <div class="container">
+
+            <img src="img_b/logo_proz_b-removebg-preview.png" alt="Logo" height="22px" width="70px">
+            <p> 2023 Proz - Desenvolvido por Isaque, Thais e Pâmela</p>
+
+        </div>
+    </footer>
+
+    <!---Fim footer-->
+
+</body>
+    <!--link java script-->
+    <script src="js/imc.js"></script>
+</html>

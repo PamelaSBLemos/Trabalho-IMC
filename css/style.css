@@ -1,0 +1,178 @@
+/* *{} esse comando e um seletor universal ele seleciona todas as tegs do site estilizar */
+*{
+    margin: 0;
+    padding: 0;  /*espaçamento interno */
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*cor de fundo pagina*/
+body{
+    background-color: #a471d331;  
+}
+
+section,
+/*titulo Calculadora IMC Proz*/
+h3{
+    font-size: 30px;
+    text-align: center;
+    color: rebeccapurple;
+}
+
+.conteiner{
+    max-width: 1400px;  /*largura maxima*/
+    margin: 0 auto;
+    padding: 0 5%; /*margem das bordas da pagina esqueda e direita*/
+}
+
+@media (max-width: 480px) {
+    .conteiner2 {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+}
+
+.conteiner2{
+    max-width: 1000px;  /*largura maxima*/
+    margin: 0 auto;
+    padding: 0 5%; /*margem das bordas da pagina esqueda e direita*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item{
+    background-color: #ccc;
+    box-shadow: 5px 3px 7px 1px gray;
+    height: 400px;
+    width: 400px; /*define o tamanho que sera a div dentro do conteiner*/
+    border-radius: 2%;
+}
+
+.conteiner2 .item label{
+    font-size: 20px;
+    color: black;
+    display: flex;
+    margin-top: 3%;
+    padding: 0 5%; 
+    padding-top: 2%;
+}
+
+.conteiner2 .item input{
+    background-color: rgb(192, 186, 186);
+    color: black;
+    padding: 5px 85px;
+    margin-left: 5%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.conteiner2 button {
+    background-color: rebeccapurple;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 40%; /*alinhamento botao*/
+    
+}
+
+#resp{
+    font-size: 30px;
+    text-align: center;
+    color: rebeccapurple;
+    margin-top: 10%;
+}
+
+#resposta{
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    margin-top: 3%;
+}
+
+#msg{
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    margin-top: 3%;
+}
+
+
+    
+
+header{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+/*botoes de menu e efeitos*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav ul a{
+    color: #8d0cc9;
+    margin: 0 25px;
+    text-transform: uppercase; /*colocar todas as letras maiusculas*/
+    font-size: 14px;
+    display: block;
+    font-weight: bold;
+}
+
+nav ul a:not(.btn)::after{  /*efeitos sobre as palavras do menu menos o botao*/
+    content: "";
+    background-color: #FF8C00;
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+
+nav ul a:hover::after{    /*efeitos sobre as palavras do menu*/
+    width: 100%;
+}
+/*fim botoes de menu e efeitos*/
+
+
+
+
+
+
+
+/*rodape pagina*/
+footer {
+    padding:20px 0;
+}
+
+.footer{
+    background-color: #8d0cc9;
+    text-align: center;
+}
+
+.footer p{
+    margin-top: 10px;
+    color: black;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+/*fim rodape pagina*/
+
