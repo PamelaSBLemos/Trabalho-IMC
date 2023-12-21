@@ -58,7 +58,7 @@ h3{
 .conteiner2 .item input{
     background-color: rgb(192, 186, 186);
     color: black;
-    padding: 5px 85px;
+    padding: 5px 65px;
     margin-left: 5%;
     border: none;
     border-radius: 4px;
@@ -131,7 +131,7 @@ nav ul a{
     font-weight: bold;
 }
 
-nav ul a:not(.btn)::after{  /*efeitos sobre as palavras do menu menos o botao*/
+nav ul a:not(.btn)::after{  /*efeitos sobre as palavras*/
     content: "";
     background-color: #FF8C00;
     height: 3px;
@@ -145,12 +145,6 @@ nav ul a:hover::after{    /*efeitos sobre as palavras do menu*/
     width: 100%;
 }
 /*fim botoes de menu e efeitos*/
-
-
-
-
-
-
 
 /*rodape pagina*/
 footer {
